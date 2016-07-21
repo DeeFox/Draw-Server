@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration packages="main.java.utils">
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+        </Console>
+        <File name="LogFile" fileName="logs/app.log" append="true">
+            <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+        </File>
+        <PushOverAppender name="PushOver" token="PUSHOVER_TOKEN" userkey="PUSHOVER_USERKEY">
+            <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/>
+        </PushOverAppender>
+        <Async name="Async" includeLocation="true">
+            <AppenderRef ref="LogFile"/>
+        </Async>
+        <Async name="AsyncPushOver" includeLocation="true">
+            <AppenderRef ref="PushOver"/>
+        </Async>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.apache.log4j.xml" level="info"/>
+        <Logger name="com.j256.ormlite" level="warn"/>
+        <Logger name="org.eclipse.jetty" level="info"/>
+        <Root level="debug">
+            <AppenderRef ref="Async"/>
+            <AppenderRef ref="STDOUT"/>
+            <AppenderRef ref="AsyncPushOver"/>
+        </Root>
+    </Loggers>
+</Configuration>

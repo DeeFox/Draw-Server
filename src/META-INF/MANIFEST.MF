@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Class-Path: jetty-annotations-9.3.8.v20160314.jar slf4j-api-1.7.21.jar
+  log4j-api-2.6.1.jar jetty-webapp-9.3.8.v20160314.jar javax-websocket
+ -client-impl-9.3.8.v20160314.jar javax-websocket-server-impl-9.3.8.v2
+ 0160314.jar gson-2.4.jar javax.servlet-api-3.1.0.jar jetty-http-9.3.8
+ .v20160314.jar h2-1.4.192.jar ormlite-core-4.48.jar ormlite-jdbc-4.48
+ .jar websocket-api-9.3.8.v20160314.jar websocket-client-9.3.8.v201603
+ 14.jar websocket-server-9.3.8.v20160314.jar jetty-io-9.3.8.v20160314.
+ jar asm-commons-5.0.1.jar jetty-security-9.3.8.v20160314.jar jetty-pl
+ us-9.3.8.v20160314.jar javax.annotation-api-1.2.jar websocket-common-
+ 9.3.8.v20160314.jar jetty-util-9.3.8.v20160314.jar jetty-jndi-9.3.8.v
+ 20160314.jar jetty-servlet-9.3.8.v20160314.jar jetty-server-9.3.8.v20
+ 160314.jar postgresql-9.4.1208.jar log4j-slf4j-impl-2.6.1.jar jetty-x
+ ml-9.3.8.v20160314.jar log4j-core-2.6.1.jar asm-tree-5.0.1.jar websoc
+ ket-servlet-9.3.8.v20160314.jar javax.websocket-api-1.1.jar asm-5.0.1
+ .jar
+Main-Class: main.java.DrawServer
+
